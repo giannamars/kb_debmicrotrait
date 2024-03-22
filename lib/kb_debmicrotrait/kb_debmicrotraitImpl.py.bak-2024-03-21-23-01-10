@@ -23,8 +23,8 @@ class kb_debmicrotrait:
     # the latter method is running.
     ######################################### noqa
     VERSION = "0.0.1"
-    GIT_URL = "https://github.com/giannamars/kb_debmicrotrait.git"
-    GIT_COMMIT_HASH = "dd44398ab6bf4aaede0f2c5354f4f5fec95a5541"
+    GIT_URL = ""
+    GIT_COMMIT_HASH = ""
 
     #BEGIN_CLASS_HEADER
     #END_CLASS_HEADER
