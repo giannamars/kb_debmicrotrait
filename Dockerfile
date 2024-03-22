@@ -13,7 +13,7 @@ RUN curl --location https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1
     cp -r julia-1.6.7 /usr/local/bin/ && \
     ln -s /usr/local/bin/julia-1.6.7/bin/julia /usr/local/bin/julia
 
-RUN julia -e 'using Pkg; Pkg.add.("OrdinaryDiffEq", version="6.58.2"); Pkg.add.("CSV", version="0.10.12"); Pkg.add.("DataFrames", version="1.6.1"); Pkg.add.("LinearAlgebra"); Pkg.add.("Roots", version="2.1.2"); Pkg.add.("Statistics")'
+RUN julia -e 'using Pkg; Pkg.add.(["OrdinaryDiffEq", "CSV", "DataFrames", "LinearAlgebra", "Roots", "Statistics"])'
 
 RUN pip install --upgrade pip
 RUN pip install matplotlib \
